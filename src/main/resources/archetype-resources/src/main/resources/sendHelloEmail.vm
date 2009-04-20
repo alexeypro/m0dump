@@ -1,0 +1,21 @@
+#set($dollar = '$')
+<html>
+<body>
+<h3>Hi ${dollar}{profile.firstName}, welcome,</h3>
+
+<br/>
+
+We will keep an eye on you, Mr. ${dollar}{profile.lastName}...
+
+<br/>
+<br/>
+
+<div>
+   Your email address is <a href="mailto:${dollar}{profile.email}">${dollar}{profile.email}</a>.
+</div>
+
+<br/>
+
+</body>
+
+</html>

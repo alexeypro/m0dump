@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.3//EN" "http://tuckey.org/res/dtds/urlrewrite2.3.dtd">
+
+<urlrewrite>
+
+    <rule>
+        <from>/showCandidate_([0-9]+).html</from>
+        <to>/showCandidate.do?candId=$1</to>
+    </rule>
+
+    <rule>
+        <from>/editCandidate_([0-9]+).html</from>
+        <to>/editCandidate.do?candId=$1</to>
+    </rule>
+
+    <rule>
+        <from>/deleteCandidate_([0-9]+).html</from>
+        <to>/deleteCandidate.do?candId=$1</to>
+    </rule>
+
+    <rule>
+        <from>/emailCandidate_([0-9]+).html</from>
+        <to>/emailCandidate.do?candId=$1</to>
+    </rule>
+
+    <rule>
+        <from>/login.html</from>
+        <to>/userLogin.do</to>
+    </rule>
+
+    <rule>
+        <from>/addCandidate.html</from>
+        <to>/addCandidate.do</to>
+    </rule>
+
+    <rule>
+        <from>/sitemap.xml</from>
+        <to>/google.do</to>
+    </rule>
+
+    <rule>
+        <from>/logout.html</from>
+        <to>/userLogoutSuccess.do</to>
+    </rule>
+
+    <rule>
+        <from>/admin.html</from>
+        <to>/adminScreen.do</to>
+    </rule>
+
+    <rule>
+        <from>/candidates.html</from>
+        <to>/candidates.do</to>
+    </rule>
+
+    <rule>
+        <from>/welcome.html</from>
+        <to>/welcome.do</to>
+    </rule>
+
+    <rule>
+        <from>/userLogoutSuccess.html</from>
+        <to>/userLogoutSuccess.do</to>
+    </rule>
+
+    <rule>
+        <from>/loginError.html</from>
+        <to>/userLogin.do?login_error=1</to>
+    </rule>
+
+</urlrewrite>
